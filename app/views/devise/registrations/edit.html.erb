@@ -14,11 +14,10 @@
             <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
           <% end %>
 
-          <div class="form-group row alert alert-primary" role="alert">
+          <div class="form-group row alert alert-danger" role="alert">
             <%= f.label :password, class: "col-form-label" %>
-            <%= f.password_field :password, autocomplete: "новый пароль", class: 'form-control' %>
+            <%= f.password_field :password, autocomplete: "новый пароль", class: "form-control" %>
             <% if @minimum_password_length %>
-              <br />
               <em><%= @minimum_password_length %> characters minimum</em>
             <% end %>
           </div>

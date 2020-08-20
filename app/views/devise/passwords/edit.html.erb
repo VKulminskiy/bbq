@@ -7,7 +7,7 @@
         <%= render "devise/shared/error_messages", resource: resource %>
         <%= f.hidden_field :reset_password_token %>
 
-        <div class="form-group row alert alert-primary" role="alert">
+        <div class="form-group row alert alert-danger" role="alert">
           <%= f.label :password, class: "col-form-label", "Новый пароль" %><br />
           <% if @minimum_password_length %>
             <em>(<%= @minimum_password_length %> символов минимум)</em><br />
